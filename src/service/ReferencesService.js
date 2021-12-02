@@ -1,21 +1,22 @@
 class ReferencesService {
   getCounterCopyingReferences(object) {
-    // TODO: assing object to a new variable and return it.
-    return null;
+    const newObj = object
+    return newObj;
   }
 
   getCounterWithoutCopyingReferences(object) {
-    // TODO: assing object to a new variable and return it.
-    return null;
+    const newObj = {
+      ...object
+    }
+    return newObj;
   }
-
-  /*
+  
   // @TIP: if you want to do the extra sub-challenge, uncomment and implement the following function:
   getCounterWithoutDeepCopyingReferences(object) {
-    // TODO: assing object to a new variable and return it.
-    return null;
+    const newObj = JSON.parse(JSON.stringify(object))
+    return newObj;
   }
-  */
+  
 }
 
 module.exports = ReferencesService;
